@@ -30,7 +30,7 @@
 </head>
 <body>
   <!-- nav section  -->
-  <section class="max-w-[1920px] h-[64px] bg-[#f2f1f3] border-b-2 border-gray-300  ">
+  <section class="max-w-[1920px] h-[64px] bg-[#f2f1f3] border-b-2 border-gray-300 mx-auto ">
    <div class="px-10 flex justify-between items-center">
      <div class="flex items-center mt-4">
       <p class="font-semibold text-[20px]">English</p>
@@ -38,15 +38,15 @@
       <p class="text-[20px]">জানালা</p>
     </div>
     <div class="flex gap-5 mt-3">
-      <button class=" btn-FAQ w-[83px] h-[40px] border-2 border-[#422AD5] rounded-lg flex items-center justify-center gap-2">
+      <button class=" btn-primary w-[83px] h-[40px] border-2 border-[#422AD5] rounded-lg flex items-center justify-center gap-2">
         <img src="assets/fa-circle-question.png" alt="question logo">
         <p class="text-[14px] text-[#422AD5] font-semibold">FAQ</p>
       </button>
-      <button class="btn-learn w-[95px] h-[40px] border-2 border-[#422AD5] rounded-lg flex items-center justify-center gap-2" >
+      <button class="btn-primary w-[95px] h-[40px] border-2 border-[#422AD5] rounded-lg flex items-center justify-center gap-2" >
         <img src="assets/fa-book-open.png" alt="book open">
        <p class="text-[14px] text-[#422AD5] font-semibold"> Learn</p>
       </button>
-      <button class=" btn-logout w-[102px] h-[40px] border-2 border-[#422AD5] rounded-lg flex items-center justify-center gap-2">
+      <button class=" btn-primary w-[102px] h-[40px] border-2 border-[#422AD5] rounded-lg flex items-center justify-center gap-2">
         <img src="assets/fa-arrow-right-from-bracket.png" alt="right-arrow">
        <p class="text-[14px] text-[#422AD5] font-semibold"> Logout</p>
       </button>
@@ -56,20 +56,43 @@
   </section>
 
   <!-- banner section  -->
-   <section class="w-11/12 flex items-center mx-auto gap-10 ">
-    <div class="w-[800px]">
+   <section class="max-w-[1759px] flex flex-col-reverse md:flex-row items-center mx-auto gap-20 ">
+    <div class="w-[800px] text-center md:text-left">
       <h1 class="text-[48px] font-bold mb-7"><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
       <p class="mb-4">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন <br> হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons <br> আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
-      <input class="border-2 border-gray-400 rounded-[5px] mb-4" type="text" placeholder="Enter Your Name"> <br>
-      <input class="border-2 border-gray-400 rounded-[5px] mb-4" type="text" placeholder="........."> <br>
-      <button>Get Started</button>
+      <input class="border-2 border-gray-400 rounded-[5px] mb-4 w-[320px] h-[40px] placeholder:pl-[20px]" type="text" placeholder="Enter Your Name"> <br>
+      <input class="border-2 border-gray-400 rounded-[5px] mb-4 w-[320px] h-[40px] placeholder:pl-[20px] placeholder:font-bold" type="text" placeholder="........."> <br>
+      <button class="w-[115px] h-[40px] text-white rounded-[5px] bg-[#422AD5]">Get Started</button>
     </div>
     <div class=" ">
       <img class="w-[774px] h-[720px]" src="assets/hero-student.png" alt="">
     </div>
    </section>
 
+   <!-- lets learn section -->
+    <section class="max-w-[1759px] mx-auto">
+      <div class="  ">
+        <div class="lets-learn-div flex flex-col items-center md:w-[1759px]">
+          <h1 class="text-[36px] font-bold mb-4"><span class="text-[#00BCFF]">Let's</span> Learn vocabularies</h1>
+          </div>
+        </div>
+        <div id="level-container" class="flex flex-wrap justify-center gap-4">
+</div>
+    </section>
+    <!-- something -->
+<section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5">
+  <div class="bg-white rounded-xl shadow-sm text-center py-10 px-5">
+    <h2 class="font-bold text-2xl">Eager</h2>
+    <p>Meaning/ Pronounciation</p>
+    <div>"আগ্রহী / ইগার"</div>
+    <div class="flex justify-between items-center mt-2"> 
+      <button><i class="fa-solid fa-circle-info"></i></button>
+      <button><i class="fa-solid fa-volume-high"></i></button>
+    </div>
+  </div>
 
-   
+</section>
+
+   <script src="index.js"></script>
 </body>
 </html>
