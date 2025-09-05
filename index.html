@@ -79,6 +79,28 @@
         <div id="level-container" class="flex flex-wrap justify-center gap-4">
 </div>
     </section>
+    <!-- loading signal -->
+    <section id='spinner'class="flex items-center justify-center py-10 hidden">
+      <span class="loading loading-ball loading-xs "></span>
+<span class="loading loading-ball loading-sm"></span>
+<span class="loading loading-ball loading-md"></span>
+<span class="loading loading-ball loading-lg"></span>
+<span class="loading loading-ball loading-xl"></span>
+    </section>
+
+<!-- search section -->
+ <section class="flex items-center justify-center my-10">
+  <div class="join">
+  <div>
+    <label class="input validator join-item">
+      
+      <input id="input-search" type="text" placeholder="search vocabulary now" required />
+    </label>
+    </div>
+  <button id='btn-search'class="btn btn-primary rounded-sm">Search</button>
+</div>
+ </section>
+
     <!-- something -->
 <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5">
   <div class="text-center col-span-full py-10 space-y-6 font-bangla">
